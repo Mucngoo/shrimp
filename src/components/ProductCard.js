@@ -1,6 +1,6 @@
 function ProductCard(props) {
     return (
-        <div className="min-w-[440px] max-w-[440px] max-h-[600px] rounded-lg border border-blue-300 bg-white p-6 shadow-sm dark:border-blue-300 dark:bg-gray-900">
+        <div className="w-[80%] max-w-[410px] rounded-[3px] border bg-white p-6 max-h-[560px] dark:border-blue-300 dark:bg-gray-900">
             <div className="h-56 w-full">
             <a href="#">
                 <img className="mx-auto h-full dark:hidden" src={props.img} alt="" />
