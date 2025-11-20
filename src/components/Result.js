@@ -13,7 +13,7 @@ function Result({ count = 0, onSortChange }) {
     };
 
     return (
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between w-full max-w-[750px]">
             {/* Result count */}
             <p className="text-3xl font-medium text-white">
                 {count} Results
