@@ -115,16 +115,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenYear(!openYear)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Year
                         <span>{openYear ? "▲" : "▼"}</span>
                     </button>
 
                     {openYear && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {yearOptions.map((y) => (
-                                <label key={y} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={y} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={years.includes(y)}
@@ -141,16 +141,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenBrand(!openBrand)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Brand
                         <span>{openBrand ? "▲" : "▼"}</span>
                     </button>
 
                     {openBrand && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {brandOptions.map((b) => (
-                                <label key={b} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={b} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={brands.includes(b)}
@@ -167,16 +167,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenModel(!openModel)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Model
                         <span>{openModel ? "▲" : "▼"}</span>
                     </button>
 
                     {openModel && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {modelOptions.map((m) => (
-                                <label key={m} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={m} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={models.includes(m)}
@@ -193,16 +193,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenBodyType(!openBodyType)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Body Type
                         <span>{openBodyType ? "▲" : "▼"}</span>
                     </button>
 
                     {openBodyType && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {bodyTypeOptions.map((bt) => (
-                                <label key={bt} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={bt} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={bodyTypes.includes(bt)}
@@ -219,16 +219,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenTransmission(!openTransmission)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Transmission
                         <span>{openTransmission ? "▲" : "▼"}</span>
                     </button>
 
                     {openTransmission && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {transmissionOptions.map((t) => (
-                                <label key={t} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={t} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={transmissions.includes(t)}
@@ -245,16 +245,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenFuelType(!openFuelType)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Fuel Type
                         <span>{openFuelType ? "▲" : "▼"}</span>
                     </button>
 
                     {openFuelType && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {fuelTypeOptions.map((ft) => (
-                                <label key={ft} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={ft} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={fuelTypes.includes(ft)}
@@ -271,15 +271,15 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenDrivetrain(!openDrivetrain)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Drivetrain
                         <span>{openDrivetrain ? "▲" : "▼"}</span>
                     </button>
                     {openDrivetrain && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {drivetrainOptions.map((dt) => (
-                                <label key={dt} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={dt} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={drivetrains.includes(dt)}
@@ -296,16 +296,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenSeats(!openSeats)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Seats
                         <span>{openSeats ? "▲" : "▼"}</span>
                     </button>
 
                     {openSeats && (
-                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded shadow-lg bg-gray-700 p-3 z-20">
                             {seatsOptions.map((s) => (
-                                <label key={s} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={s} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={seats.includes(s)}
@@ -322,16 +322,16 @@ function Filter() {
                 <div className="relative">
                     <button
                         onClick={() => setOpenColor(!openColor)}
-                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm dark:bg-gray-700 dark:text-white"
+                        className="w-full flex justify-between rounded-[3px] p-3.5 text-sm bg-gray-700 text-white"
                     >
                         Color
                         <span>{openColor ? "▲" : "▼"}</span>
                     </button>
 
                     {openColor && (
-                        <div className="absolute left-0 right-0 mt-1 rounded bg-white shadow-lg dark:bg-gray-700 p-3 z-20">
+                        <div className="absolute left-0 right-0 mt-1 rounded bg-white shadow-lg bg-gray-700 p-3 z-20">
                             {colorOptions.map((c) => (
-                                <label key={c} className="flex items-center gap-2 py-1 text-sm text-gray-900 dark:text-white">
+                                <label key={c} className="flex items-center gap-2 py-1 text-sm text-gray-900 text-white">
                                     <input
                                         type="checkbox"
                                         checked={colors.includes(c)}

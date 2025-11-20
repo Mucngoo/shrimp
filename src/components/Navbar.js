@@ -20,7 +20,7 @@ export default function Navbar(props) {
     <>
     <Disclosure
       as="nav"
-      className="relative dark:bg-gray-800 dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-white/10"
+      className="relative bg-gray-800 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
@@ -48,7 +48,7 @@ export default function Navbar(props) {
                     key={item.name}
                     to={item.href}
                     className={({isActive}) => {
-                        return `text-white rounded-md px-3 py-2 text-sm font-medium` + (isActive ? 'bg-gray-900 text-white dark:bg-gray-950/50' : 'text-gray-300 hover:bg-white/5 hover:text-white');
+                        return `text-white rounded-md px-3 py-2 text-sm font-medium` + (isActive ? 'bg-gray-900 text-white bg-gray-950/50' : 'text-gray-300 hover:bg-white/5 hover:text-white');
                     }}
                   >
                     {item.name}
@@ -60,7 +60,7 @@ export default function Navbar(props) {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <button
               type="button"
-              className="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500 dark:hover:text-white"
+              className="relative rounded-full p-1 text-gray-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500 hover:text-white"
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
@@ -89,7 +89,7 @@ export default function Navbar(props) {
                 key={item.name}
                 to={item.href}
                 className={({isActive}) => {
-                    return `block text-white rounded-md px-3 py-2 text-base font-medium` + (isActive ? 'bg-gray-900 text-white dark:bg-gray-950/50' : 'text-gray-300 hover:bg-white/5 hover:text-white');
+                    return `block text-white rounded-md px-3 py-2 text-base font-medium` + (isActive ? 'bg-gray-900 text-white bg-gray-950/50' : 'text-gray-300 hover:bg-white/5 hover:text-white');
                 }}
             >
                 {item.name}
